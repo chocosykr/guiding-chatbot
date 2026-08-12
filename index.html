@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title data-default>TourBot — Guided Tour Chatbot Testbed</title>
+    <style>
+      @keyframes tourPulse {
+        0%, 100% {
+          box-shadow: 0 0 0 4px rgba(25, 118, 210, 0.15), 0 0 20px 4px rgba(25, 118, 210, 0.4);
+        }
+        50% {
+          box-shadow: 0 0 0 6px rgba(25, 118, 210, 0.25), 0 0 30px 8px rgba(25, 118, 210, 0.6);
+        }
+      }
+      .tour-highlight {
+        position: relative;
+        z-index: 9997;
+        border-radius: 4px;
+        animation: tourPulse 1.5s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

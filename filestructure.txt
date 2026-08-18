@@ -1,0 +1,63 @@
+|-- .bolt
+    |-- config.json
+|-- .env
+|-- .gitignore
+|-- README.md
+|-- architecture.md
+|-- backend
+    |-- __pycache__
+        |-- app.cpython-312.pyc
+        |-- graph.cpython-312.pyc
+        |-- matcher.cpython-312.pyc
+        |-- models.cpython-312.pyc
+        |-- site_context.cpython-312.pyc
+    |-- app.py
+    |-- graph.py
+    |-- llm_output_debug.log
+    |-- matcher.py
+    |-- models.py
+    |-- site_context.py
+|-- eslint.config.js
+|-- index.html
+|-- package-lock.json
+|-- package.json
+|-- public
+    |-- favicon.svg
+    |-- icons.svg
+|-- scripts
+    |-- generate-graph.js
+|-- src
+    |-- App.tsx
+    |-- components
+        |-- ChatWidget.tsx
+        |-- Footer.tsx
+        |-- SettingsLayout.tsx
+        |-- TopNav.tsx
+    |-- context
+        |-- AppStateContext.tsx
+        |-- ThemeModeContext.tsx
+        |-- types.ts
+    |-- graph-edges.json
+    |-- main.tsx
+    |-- pages
+        |-- CreateSetPage.tsx
+        |-- DashboardPage.tsx
+        |-- ManageClientsPage.tsx
+        |-- OfficePage.tsx
+        |-- PercentageSettingsPage.tsx
+        |-- QuestionReviewPage.tsx
+        |-- SettingsPage.tsx
+        |-- TimeMarksSettingsPage.tsx
+    |-- site-graph.json
+    |-- siteGraph.ts
+    |-- theme.ts
+    |-- tour
+        |-- TourOverlay.tsx
+        |-- bfs.ts
+        |-- resolveIntent.ts
+        |-- useTour.ts
+    |-- vite-env.d.ts
+|-- tsconfig.app.json
+|-- tsconfig.json
+|-- tsconfig.node.json
+|-- vite.config.ts

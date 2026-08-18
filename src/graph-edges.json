@@ -1,0 +1,54 @@
+[
+  { "from": "create-set", "to": "dashboard", "selector": "[data-tour-id='nav-dashboard']" },
+  { "from": "question-review", "to": "dashboard", "selector": "[data-tour-id='nav-dashboard']" },
+  { "from": "office", "to": "dashboard", "selector": "[data-tour-id='nav-dashboard']" },
+  { "from": "manage-clients", "to": "dashboard", "selector": "[data-tour-id='nav-dashboard']" },
+  { "from": "settings.time-marks", "to": "dashboard", "selector": "[data-tour-id='nav-dashboard']" },
+  { "from": "settings.percentage", "to": "dashboard", "selector": "[data-tour-id='nav-dashboard']" },
+
+  { "from": "dashboard", "to": "question-review", "selector": "[data-tour-id='nav-question-review']" },
+  { "from": "dashboard", "to": "office", "selector": "[data-tour-id='nav-office']" },
+  { "from": "dashboard", "to": "manage-clients", "selector": "[data-tour-id='nav-manage-clients']" },
+  { "from": "dashboard", "to": "create-set", "selector": "[data-tour-id='dashboard-create-set-btn']" },
+  { "from": "dashboard", "to": "nav-settings", "selector": "[data-tour-id='nav-settings']" },
+
+  { "from": "create-set", "to": "question-review", "selector": "[data-tour-id='nav-question-review']" },
+  { "from": "create-set", "to": "office", "selector": "[data-tour-id='nav-office']" },
+  { "from": "create-set", "to": "manage-clients", "selector": "[data-tour-id='nav-manage-clients']" },
+  { "from": "create-set", "to": "nav-settings", "selector": "[data-tour-id='nav-settings']" },
+
+  { "from": "question-review", "to": "office", "selector": "[data-tour-id='nav-office']" },
+  { "from": "question-review", "to": "manage-clients", "selector": "[data-tour-id='nav-manage-clients']" },
+  { "from": "question-review", "to": "nav-settings", "selector": "[data-tour-id='nav-settings']" },
+
+  { "from": "office", "to": "question-review", "selector": "[data-tour-id='nav-question-review']" },
+  { "from": "office", "to": "manage-clients", "selector": "[data-tour-id='nav-manage-clients']" },
+  { "from": "office", "to": "nav-settings", "selector": "[data-tour-id='nav-settings']" },
+
+  { "from": "manage-clients", "to": "question-review", "selector": "[data-tour-id='nav-question-review']" },
+  { "from": "manage-clients", "to": "office", "selector": "[data-tour-id='nav-office']" },
+  { "from": "manage-clients", "to": "nav-settings", "selector": "[data-tour-id='nav-settings']" },
+
+  { "from": "nav-settings", "to": "settings.time-marks", "selector": "[data-tour-id='nav-settings-time-marks']" },
+  { "from": "nav-settings", "to": "settings.percentage", "selector": "[data-tour-id='nav-settings-percentage']" },
+
+  { "from": "settings.time-marks", "to": "settings.percentage", "selector": "[data-tour-id='nav-settings-percentage']" },
+  { "from": "settings.percentage", "to": "settings.time-marks", "selector": "[data-tour-id='nav-settings-time-marks']" },
+  { "from": "settings.time-marks", "to": "question-review", "selector": "[data-tour-id='nav-question-review']" },
+  { "from": "settings.time-marks", "to": "office", "selector": "[data-tour-id='nav-office']" },
+  { "from": "settings.time-marks", "to": "manage-clients", "selector": "[data-tour-id='nav-manage-clients']" },
+  { "from": "settings.percentage", "to": "question-review", "selector": "[data-tour-id='nav-question-review']" },
+  { "from": "settings.percentage", "to": "office", "selector": "[data-tour-id='nav-office']" },
+  { "from": "settings.percentage", "to": "manage-clients", "selector": "[data-tour-id='nav-manage-clients']" },
+
+  { "from": "office.office-add-btn", "to": "office.office-form-name", "selector": "[data-tour-id='office-form-name']" },
+  { "from": "office.office-add-btn", "to": "office.office-form-code", "selector": "[data-tour-id='office-form-code']" },
+  { "from": "office.office-add-btn", "to": "office.office-form-location", "selector": "[data-tour-id='office-form-location']" },
+  { "from": "office.office-add-btn", "to": "office.office-form-status", "selector": "[data-tour-id='office-form-status']" },
+  { "from": "office.office-add-btn", "to": "office.office-form-submit", "selector": "[data-tour-id='office-form-submit']" },
+
+  { "from": "manage-clients.client-add-btn", "to": "manage-clients.client-form-name", "selector": "[data-tour-id='client-form-name']" },
+  { "from": "manage-clients.client-add-btn", "to": "manage-clients.client-form-users", "selector": "[data-tour-id='client-form-users']" },
+  { "from": "manage-clients.client-add-btn", "to": "manage-clients.client-form-plan", "selector": "[data-tour-id='client-form-plan']" },
+  { "from": "manage-clients.client-add-btn", "to": "manage-clients.client-form-submit", "selector": "[data-tour-id='client-form-submit']" }
+]

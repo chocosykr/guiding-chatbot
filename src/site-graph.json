@@ -1,0 +1,834 @@
+{
+  "nav-settings": {
+    "label": "Settings Menu",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "settings.time-marks",
+        "selector": "[data-tour-id='nav-settings-time-marks']"
+      },
+      {
+        "to": "settings.percentage",
+        "selector": "[data-tour-id='nav-settings-percentage']"
+      }
+    ]
+  },
+  "dashboard": {
+    "path": "/dashboard",
+    "label": "Dashboard",
+    "keywords": [
+      "dashboard",
+      "home",
+      "overview",
+      "summary",
+      "question sets",
+      "import",
+      "upload"
+    ],
+    "edges": [
+      {
+        "to": "dashboard.dashboard-create-set-btn",
+        "selector": "[data-tour-id=\"dashboard-create-set-btn\"]"
+      },
+      {
+        "to": "dashboard.dashboard-question-bank-btn",
+        "selector": "[data-tour-id=\"dashboard-question-bank-btn\"]"
+      },
+      {
+        "to": "dashboard.dashboard-import-btn",
+        "selector": "[data-tour-id=\"dashboard-import-btn\"]"
+      },
+      {
+        "to": "dashboard.dashboard-deleted-btn",
+        "selector": "[data-tour-id=\"dashboard-deleted-btn\"]"
+      },
+      {
+        "to": "dashboard.dashboard-filter-office",
+        "selector": "[data-tour-id=\"dashboard-filter-office\"]"
+      },
+      {
+        "to": "dashboard.dashboard-filter-rank",
+        "selector": "[data-tour-id=\"dashboard-filter-rank\"]"
+      },
+      {
+        "to": "dashboard.dashboard-reset-filters-btn",
+        "selector": "[data-tour-id=\"dashboard-reset-filters-btn\"]"
+      },
+      {
+        "to": "question-review",
+        "selector": "[data-tour-id='nav-question-review']"
+      },
+      {
+        "to": "office",
+        "selector": "[data-tour-id='nav-office']"
+      },
+      {
+        "to": "manage-clients",
+        "selector": "[data-tour-id='nav-manage-clients']"
+      },
+      {
+        "to": "create-set",
+        "selector": "[data-tour-id='dashboard-create-set-btn']"
+      },
+      {
+        "to": "nav-settings",
+        "selector": "[data-tour-id='nav-settings']"
+      }
+    ]
+  },
+  "dashboard.dashboard-create-set-btn": {
+    "label": "Dashboard Create Set Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "dashboard",
+        "selector": ""
+      }
+    ],
+    "parent": "dashboard"
+  },
+  "dashboard.dashboard-question-bank-btn": {
+    "label": "Dashboard Question Bank Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "dashboard",
+        "selector": ""
+      }
+    ],
+    "parent": "dashboard"
+  },
+  "dashboard.dashboard-import-btn": {
+    "label": "Dashboard Import Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "dashboard",
+        "selector": ""
+      }
+    ],
+    "parent": "dashboard"
+  },
+  "dashboard.dashboard-deleted-btn": {
+    "label": "Dashboard Deleted Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "dashboard",
+        "selector": ""
+      }
+    ],
+    "parent": "dashboard"
+  },
+  "dashboard.dashboard-filter-office": {
+    "label": "Dashboard Filter Office",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "dashboard",
+        "selector": ""
+      }
+    ],
+    "parent": "dashboard"
+  },
+  "dashboard.dashboard-filter-rank": {
+    "label": "Dashboard Filter Rank",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "dashboard",
+        "selector": ""
+      }
+    ],
+    "parent": "dashboard"
+  },
+  "dashboard.dashboard-reset-filters-btn": {
+    "label": "Dashboard Reset Filters Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "dashboard",
+        "selector": ""
+      }
+    ],
+    "parent": "dashboard"
+  },
+  "create-set": {
+    "path": "/create-set",
+    "label": "Create Set",
+    "keywords": [
+      "create",
+      "new",
+      "generate",
+      "set",
+      "question set",
+      "template"
+    ],
+    "edges": [
+      {
+        "to": "create-set.create-select-rank",
+        "selector": "[data-tour-id=\"create-select-rank\"]"
+      },
+      {
+        "to": "create-set.create-select-topic",
+        "selector": "[data-tour-id=\"create-select-topic\"]"
+      },
+      {
+        "to": "create-set.create-select-difficulty",
+        "selector": "[data-tour-id=\"create-select-difficulty\"]"
+      },
+      {
+        "to": "create-set.create-filter-btn",
+        "selector": "[data-tour-id=\"create-filter-btn\"]"
+      },
+      {
+        "to": "create-set.create-generate-btn",
+        "selector": "[data-tour-id=\"create-generate-btn\"]"
+      },
+      {
+        "to": "create-set.create-reset-btn",
+        "selector": "[data-tour-id=\"create-reset-btn\"]"
+      },
+      {
+        "to": "create-set.create-save-template-btn",
+        "selector": "[data-tour-id=\"create-save-template-btn\"]"
+      },
+      {
+        "to": "dashboard",
+        "selector": "[data-tour-id='nav-dashboard']"
+      },
+      {
+        "to": "question-review",
+        "selector": "[data-tour-id='nav-question-review']"
+      },
+      {
+        "to": "office",
+        "selector": "[data-tour-id='nav-office']"
+      },
+      {
+        "to": "manage-clients",
+        "selector": "[data-tour-id='nav-manage-clients']"
+      },
+      {
+        "to": "nav-settings",
+        "selector": "[data-tour-id='nav-settings']"
+      }
+    ]
+  },
+  "create-set.create-select-rank": {
+    "label": "Create Select Rank",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "create-set",
+        "selector": ""
+      }
+    ],
+    "parent": "create-set"
+  },
+  "create-set.create-select-topic": {
+    "label": "Create Select Topic",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "create-set",
+        "selector": ""
+      }
+    ],
+    "parent": "create-set"
+  },
+  "create-set.create-select-difficulty": {
+    "label": "Create Select Difficulty",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "create-set",
+        "selector": ""
+      }
+    ],
+    "parent": "create-set"
+  },
+  "create-set.create-filter-btn": {
+    "label": "Create Filter Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "create-set",
+        "selector": ""
+      }
+    ],
+    "parent": "create-set"
+  },
+  "create-set.create-generate-btn": {
+    "label": "Create Generate Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "create-set",
+        "selector": ""
+      }
+    ],
+    "parent": "create-set"
+  },
+  "create-set.create-reset-btn": {
+    "label": "Create Reset Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "create-set",
+        "selector": ""
+      }
+    ],
+    "parent": "create-set"
+  },
+  "create-set.create-save-template-btn": {
+    "label": "Create Save Template Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "create-set",
+        "selector": ""
+      }
+    ],
+    "parent": "create-set"
+  },
+  "question-review": {
+    "path": "/question-review",
+    "label": "Question Review",
+    "keywords": [
+      "review",
+      "questions",
+      "progress",
+      "portal",
+      "validate",
+      "filter",
+      "type",
+      "department",
+      "rank",
+      "topic",
+      "status",
+      "reviewed"
+    ],
+    "edges": [
+      {
+        "to": "question-review.qr-back-btn",
+        "selector": "[data-tour-id=\"qr-back-btn\"]"
+      },
+      {
+        "to": "question-review.qr-expand-filters",
+        "selector": "[data-tour-id=\"qr-expand-filters\"]"
+      },
+      {
+        "to": "question-review.qr-filter-type",
+        "selector": "[data-tour-id=\"qr-filter-type\"]"
+      },
+      {
+        "to": "question-review.qr-filter-dept",
+        "selector": "[data-tour-id=\"qr-filter-dept\"]"
+      },
+      {
+        "to": "question-review.qr-filter-rank",
+        "selector": "[data-tour-id=\"qr-filter-rank\"]"
+      },
+      {
+        "to": "question-review.qr-filter-topic",
+        "selector": "[data-tour-id=\"qr-filter-topic\"]"
+      },
+      {
+        "to": "question-review.qr-filter-status",
+        "selector": "[data-tour-id=\"qr-filter-status\"]"
+      },
+      {
+        "to": "question-review.qr-filter-reviewed-by",
+        "selector": "[data-tour-id=\"qr-filter-reviewed-by\"]"
+      },
+      {
+        "to": "dashboard",
+        "selector": "[data-tour-id='nav-dashboard']"
+      },
+      {
+        "to": "office",
+        "selector": "[data-tour-id='nav-office']"
+      },
+      {
+        "to": "manage-clients",
+        "selector": "[data-tour-id='nav-manage-clients']"
+      },
+      {
+        "to": "nav-settings",
+        "selector": "[data-tour-id='nav-settings']"
+      }
+    ]
+  },
+  "question-review.qr-back-btn": {
+    "label": "Qr Back Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "question-review",
+        "selector": ""
+      }
+    ],
+    "parent": "question-review"
+  },
+  "question-review.qr-expand-filters": {
+    "label": "Qr Expand Filters",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "question-review",
+        "selector": ""
+      }
+    ],
+    "parent": "question-review"
+  },
+  "question-review.qr-filter-type": {
+    "label": "Qr Filter Type",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "question-review",
+        "selector": ""
+      }
+    ],
+    "parent": "question-review"
+  },
+  "question-review.qr-filter-dept": {
+    "label": "Qr Filter Dept",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "question-review",
+        "selector": ""
+      }
+    ],
+    "parent": "question-review"
+  },
+  "question-review.qr-filter-rank": {
+    "label": "Qr Filter Rank",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "question-review",
+        "selector": ""
+      }
+    ],
+    "parent": "question-review"
+  },
+  "question-review.qr-filter-topic": {
+    "label": "Qr Filter Topic",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "question-review",
+        "selector": ""
+      }
+    ],
+    "parent": "question-review"
+  },
+  "question-review.qr-filter-status": {
+    "label": "Qr Filter Status",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "question-review",
+        "selector": ""
+      }
+    ],
+    "parent": "question-review"
+  },
+  "question-review.qr-filter-reviewed-by": {
+    "label": "Qr Filter Reviewed By",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "question-review",
+        "selector": ""
+      }
+    ],
+    "parent": "question-review"
+  },
+  "office": {
+    "path": "/office",
+    "label": "Office",
+    "keywords": [
+      "office",
+      "location",
+      "branch"
+    ],
+    "edges": [
+      {
+        "to": "office.office-add-btn",
+        "selector": "[data-tour-id=\"office-add-btn\"]"
+      },
+      {
+        "to": "office.office-search",
+        "selector": "[data-tour-id=\"office-search\"]"
+      },
+      {
+        "to": "office.office-form-name",
+        "selector": "[data-tour-id=\"office-form-name\"]"
+      },
+      {
+        "to": "office.office-form-code",
+        "selector": "[data-tour-id=\"office-form-code\"]"
+      },
+      {
+        "to": "office.office-form-location",
+        "selector": "[data-tour-id=\"office-form-location\"]"
+      },
+      {
+        "to": "office.office-form-status",
+        "selector": "[data-tour-id=\"office-form-status\"]"
+      },
+      {
+        "to": "office.office-form-submit",
+        "selector": "[data-tour-id=\"office-form-submit\"]"
+      },
+      {
+        "to": "dashboard",
+        "selector": "[data-tour-id='nav-dashboard']"
+      },
+      {
+        "to": "question-review",
+        "selector": "[data-tour-id='nav-question-review']"
+      },
+      {
+        "to": "manage-clients",
+        "selector": "[data-tour-id='nav-manage-clients']"
+      },
+      {
+        "to": "nav-settings",
+        "selector": "[data-tour-id='nav-settings']"
+      }
+    ]
+  },
+  "office.office-add-btn": {
+    "label": "Office Add Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "office",
+        "selector": ""
+      },
+      {
+        "to": "office.office-form-name",
+        "selector": "[data-tour-id='office-form-name']"
+      },
+      {
+        "to": "office.office-form-code",
+        "selector": "[data-tour-id='office-form-code']"
+      },
+      {
+        "to": "office.office-form-location",
+        "selector": "[data-tour-id='office-form-location']"
+      },
+      {
+        "to": "office.office-form-status",
+        "selector": "[data-tour-id='office-form-status']"
+      },
+      {
+        "to": "office.office-form-submit",
+        "selector": "[data-tour-id='office-form-submit']"
+      }
+    ],
+    "parent": "office"
+  },
+  "office.office-search": {
+    "label": "Office Search",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "office",
+        "selector": ""
+      }
+    ],
+    "parent": "office"
+  },
+  "office.office-form-name": {
+    "label": "Office Form Name",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "office",
+        "selector": ""
+      }
+    ],
+    "parent": "office"
+  },
+  "office.office-form-code": {
+    "label": "Office Form Code",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "office",
+        "selector": ""
+      }
+    ],
+    "parent": "office"
+  },
+  "office.office-form-location": {
+    "label": "Office Form Location",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "office",
+        "selector": ""
+      }
+    ],
+    "parent": "office"
+  },
+  "office.office-form-status": {
+    "label": "Office Form Status",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "office",
+        "selector": ""
+      }
+    ],
+    "parent": "office"
+  },
+  "office.office-form-submit": {
+    "label": "Office Form Submit",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "office",
+        "selector": ""
+      }
+    ],
+    "parent": "office"
+  },
+  "manage-clients": {
+    "path": "/manage-clients",
+    "label": "Manage Clients",
+    "keywords": [
+      "client",
+      "company",
+      "manage"
+    ],
+    "edges": [
+      {
+        "to": "manage-clients.client-add-btn",
+        "selector": "[data-tour-id=\"client-add-btn\"]"
+      },
+      {
+        "to": "manage-clients.client-search",
+        "selector": "[data-tour-id=\"client-search\"]"
+      },
+      {
+        "to": "manage-clients.client-form-name",
+        "selector": "[data-tour-id=\"client-form-name\"]"
+      },
+      {
+        "to": "manage-clients.client-form-users",
+        "selector": "[data-tour-id=\"client-form-users\"]"
+      },
+      {
+        "to": "manage-clients.client-form-plan",
+        "selector": "[data-tour-id=\"client-form-plan\"]"
+      },
+      {
+        "to": "manage-clients.client-form-submit",
+        "selector": "[data-tour-id=\"client-form-submit\"]"
+      },
+      {
+        "to": "dashboard",
+        "selector": "[data-tour-id='nav-dashboard']"
+      },
+      {
+        "to": "question-review",
+        "selector": "[data-tour-id='nav-question-review']"
+      },
+      {
+        "to": "office",
+        "selector": "[data-tour-id='nav-office']"
+      },
+      {
+        "to": "nav-settings",
+        "selector": "[data-tour-id='nav-settings']"
+      }
+    ]
+  },
+  "manage-clients.client-add-btn": {
+    "label": "Client Add Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "manage-clients",
+        "selector": ""
+      },
+      {
+        "to": "manage-clients.client-form-name",
+        "selector": "[data-tour-id='client-form-name']"
+      },
+      {
+        "to": "manage-clients.client-form-users",
+        "selector": "[data-tour-id='client-form-users']"
+      },
+      {
+        "to": "manage-clients.client-form-plan",
+        "selector": "[data-tour-id='client-form-plan']"
+      },
+      {
+        "to": "manage-clients.client-form-submit",
+        "selector": "[data-tour-id='client-form-submit']"
+      }
+    ],
+    "parent": "manage-clients"
+  },
+  "manage-clients.client-search": {
+    "label": "Client Search",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "manage-clients",
+        "selector": ""
+      }
+    ],
+    "parent": "manage-clients"
+  },
+  "manage-clients.client-form-name": {
+    "label": "Client Form Name",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "manage-clients",
+        "selector": ""
+      }
+    ],
+    "parent": "manage-clients"
+  },
+  "manage-clients.client-form-users": {
+    "label": "Client Form Users",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "manage-clients",
+        "selector": ""
+      }
+    ],
+    "parent": "manage-clients"
+  },
+  "manage-clients.client-form-plan": {
+    "label": "Client Form Plan",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "manage-clients",
+        "selector": ""
+      }
+    ],
+    "parent": "manage-clients"
+  },
+  "manage-clients.client-form-submit": {
+    "label": "Client Form Submit",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "manage-clients",
+        "selector": ""
+      }
+    ],
+    "parent": "manage-clients"
+  },
+  "settings.time-marks": {
+    "path": "/settings/time-marks",
+    "label": "Time Marks",
+    "keywords": [
+      "time",
+      "marks",
+      "points",
+      "duration",
+      "settings"
+    ],
+    "edges": [
+      {
+        "to": "settings.time-marks.time-marks-save-btn",
+        "selector": "[data-tour-id=\"time-marks-save-btn\"]"
+      },
+      {
+        "to": "dashboard",
+        "selector": "[data-tour-id='nav-dashboard']"
+      },
+      {
+        "to": "settings.percentage",
+        "selector": "[data-tour-id='nav-settings-percentage']"
+      },
+      {
+        "to": "question-review",
+        "selector": "[data-tour-id='nav-question-review']"
+      },
+      {
+        "to": "office",
+        "selector": "[data-tour-id='nav-office']"
+      },
+      {
+        "to": "manage-clients",
+        "selector": "[data-tour-id='nav-manage-clients']"
+      }
+    ]
+  },
+  "settings.time-marks.time-marks-save-btn": {
+    "label": "Time Marks Save Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "settings.time-marks",
+        "selector": ""
+      }
+    ],
+    "parent": "settings.time-marks"
+  },
+  "settings.percentage": {
+    "path": "/settings/percentage",
+    "label": "Percentage",
+    "keywords": [
+      "percentage",
+      "threshold",
+      "pass",
+      "deck",
+      "engine",
+      "rank",
+      "settings"
+    ],
+    "edges": [
+      {
+        "to": "settings.percentage.pct-save-btn",
+        "selector": "[data-tour-id=\"pct-save-btn\"]"
+      },
+      {
+        "to": "dashboard",
+        "selector": "[data-tour-id='nav-dashboard']"
+      },
+      {
+        "to": "settings.time-marks",
+        "selector": "[data-tour-id='nav-settings-time-marks']"
+      },
+      {
+        "to": "question-review",
+        "selector": "[data-tour-id='nav-question-review']"
+      },
+      {
+        "to": "office",
+        "selector": "[data-tour-id='nav-office']"
+      },
+      {
+        "to": "manage-clients",
+        "selector": "[data-tour-id='nav-manage-clients']"
+      }
+    ]
+  },
+  "settings.percentage.pct-save-btn": {
+    "label": "Pct Save Btn",
+    "keywords": [],
+    "edges": [
+      {
+        "to": "settings.percentage",
+        "selector": ""
+      }
+    ],
+    "parent": "settings.percentage"
+  }
+}

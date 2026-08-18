@@ -1,23 +1,45 @@
 import { siteGraph, type SiteGraph } from '../siteGraph';
 
-/**
- * resolveIntent — maps a free-text user message to the best-matching site node.
- *
- * This is a simple keyword-matching stub. It scores each node by checking how
- * many of the user's words match the node's label and keywords.
- *
- * // TODO: replace with real LLM API call
- * A future implementation would send { userMessage, currentNodeId, siteGraph }
- * to an LLM endpoint and receive back a target node ID. The function signature
- * is designed to stay the same so the swap is a drop-in.
- */
-export function resolveIntent(
+export interface IntentResponse {
+  action: 'navigate' | 'answer' | 'clarify';
+  targetNodeId?: string | null;
+  formId?: string | null;
+  text?: string | null;
+  startMessage?: string | null;
+  completionMessage?: string | null;
+}
+
+const CHAIN_SPLIT_RE = /\s*(?:,?\s*and then\s+|,?\s*then\s+|\s+after that\s+)\s*/i;
+
+function resolveSingleIntent(
   userMessage: string,
   currentNodeId: string,
-  graph: SiteGraph = siteGraph,
-): string | null {
-  const words = userMessage
-    .toLowerCase()
+  graph: SiteGraph,
+): IntentResponse {
+  const lowerQuery = userMessage.toLowerCase();
+
+  if (
+    (lowerQuery.includes('question') || lowerQuery.includes('set')) &&
+    (lowerQuery.includes('new') || lowerQuery.includes('create') || lowerQuery.includes('add') || lowerQuery.includes('make') || lowerQuery.includes('start'))
+  ) {
+    return {
+      action: 'navigate',
+      targetNodeId: 'create-set',
+      startMessage: "I'll guide you through creating a new question set. Follow the highlights!",
+      completionMessage: "You're all set to build your question set!"
+    };
+  }
+
+  if (lowerQuery.includes('import')) {
+    return {
+      action: 'navigate',
+      targetNodeId: 'dashboard.dashboard-import-btn',
+      startMessage: "I'll guide you to the Import Questions button on the Dashboard!",
+      completionMessage: "Here is the Import Questions button!"
+    };
+  }
+
+  const words = lowerQuery
     .split(/\s+/)
     .map((w) => w.replace(/[^a-z0-9]/g, ''))
     .filter(Boolean);
@@ -46,5 +68,46 @@ export function resolveIntent(
     }
   }
 
-  return bestScore > 0 ? bestNode : null;
+  if (bestNode && bestScore > 2) {
+    return {
+      action: 'navigate',
+      targetNodeId: bestNode,
+      startMessage: `Heading over to ${graph[bestNode].label}. Follow the highlights!`,
+      completionMessage: "We've arrived!"
+    };
+  }
+
+  return {
+    action: 'clarify',
+    text: "I'm not quite sure what you mean. Try asking a question or mentioning a page name like 'dashboard'."
+  };
+}
+
+export function resolveIntents(
+  userMessage: string,
+  currentNodeId: string,
+  graph: SiteGraph = siteGraph,
+): IntentResponse[] {
+  const parts = userMessage.split(CHAIN_SPLIT_RE).map((p) => p.trim()).filter(Boolean);
+
+  if (parts.length <= 1) {
+    return [resolveSingleIntent(userMessage, currentNodeId, graph)];
+  }
+
+  let runningNodeId = currentNodeId;
+  const results: IntentResponse[] = [];
+  for (const part of parts) {
+    const result = resolveSingleIntent(part, runningNodeId, graph);
+    results.push(result);
+    if (result.action === 'navigate' && result.targetNodeId) runningNodeId = result.targetNodeId;
+  }
+  return results;
+}
+
+export function resolveIntent(
+  userMessage: string,
+  currentNodeId: string,
+  graph: SiteGraph = siteGraph,
+): IntentResponse {
+  return resolveSingleIntent(userMessage, currentNodeId, graph);
 }

@@ -1,24 +1,32 @@
 import { createTheme } from '@mui/material/styles';
-import { indigo, teal, amber } from '@mui/material/colors';
+import { blue, red, orange, green, grey } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: indigo[600],
-      light: indigo[400],
-      dark: indigo[800],
+      main: blue[800], // Bold blue
+      light: blue[600],
+      dark: blue[900],
     },
     secondary: {
-      main: teal[500],
-      light: teal[300],
-      dark: teal[700],
+      main: orange[700], // Yellow/orange for action buttons
+      light: orange[500],
+      dark: orange[800],
     },
-    info: {
-      main: '#0288d1',
+    error: {
+      main: red[700], // Red for FAB, Delete
     },
-    warning: {
-      main: amber[700],
+    success: {
+      main: green[600],
+    },
+    background: {
+      default: '#f8fafc',
+      paper: '#ffffff',
+    },
+    text: {
+      primary: grey[900],
+      secondary: grey[600],
     },
   },
   typography: {
@@ -26,10 +34,10 @@ const theme = createTheme({
     h4: { fontWeight: 700 },
     h5: { fontWeight: 600 },
     h6: { fontWeight: 600 },
-    button: { textTransform: 'none' },
+    button: { textTransform: 'none', fontWeight: 600 },
   },
   shape: {
-    borderRadius: 10,
+    borderRadius: 8,
   },
   components: {
     MuiButton: {
@@ -40,6 +48,7 @@ const theme = createTheme({
         root: {
           textTransform: 'none',
           fontWeight: 600,
+          borderRadius: 6,
         },
       },
     },
@@ -53,7 +62,26 @@ const theme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          borderRadius: 12,
+          borderRadius: 8,
+          boxShadow: '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
+        },
+      },
+    },
+    MuiDataGrid: {
+      styleOverrides: {
+        root: {
+          border: 'none',
+          '& .MuiDataGrid-cell': {
+            borderBottom: '1px solid #f0f0f0',
+          },
+          '& .MuiDataGrid-columnHeaders': {
+            backgroundColor: blue[800],
+            color: '#fff',
+            borderRadius: 0,
+          },
+          '& .MuiDataGrid-iconSeparator': {
+            display: 'none',
+          },
         },
       },
     },
